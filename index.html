@@ -3,12 +3,12 @@
       <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <style>
       body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
+        background-color: #F6BC12;
       }
 
       .topnav {
@@ -35,7 +35,7 @@
         color: black;
       }
       .myimage{
-        width: 30%;
+        width: 25%;
       }
       </style>
       </head>
@@ -47,17 +47,45 @@
         <a href="contact.html">Contact</a>
       </div>
 
-      <div style="padding-left:16px">
-        <p>
-<i class="fa fa-instagram"></i> tranbrianna
-        </p>
+            <p>
+            <strong> &#9728;  Brianna Tran &#9728;</strong>
+          </p>
+          <section>
+  <img class="mySlides" src="IMG_3688.jpg"
+  style="width: 70%">
+  <img class="mySlides" src="bridog.jpeg"
+  style="width: 70%">
+  <img class="mySlides" src="monarchday.jpeg"
+  style="width:70%">
+  <img class="mySlides" src="IMG_5904.jpg"
+  style="width:70%">
+</section>
 
-<i class="material-icons" style="font-size:14px">mail_outline</i> brianna.t.tran@gmail.com
-<p>
-        <img src = "https://78.media.tumblr.com/63867cc7ce77c381aa5a4cad45f18300/tumblr_o0xhziLA7j1r3vumjo1_1280.gif" class= "myimage"
-      </img>
-    </p>
-      </div>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+
+</script>
+
+<!--
+        <img src = "https://giant.gfycat.com/CompetentDifficultBluejay.gif" class= "myimage"
+        </img>
+
+
+      </div> -->
 
       </body>
       </html>
